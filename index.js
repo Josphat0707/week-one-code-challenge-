@@ -1,11 +1,14 @@
 function studentsGrades(){
 
     let marks = prompt("Enter your marks!");
+    if(isNaN(marks)){
+        return "Not a number."
+    }
 
     if(marks < 0 || marks > 100){
         return "Invalid marks";
     }
-    
+
     let grade;
     if(marks >= 79){
         grade = "A";
