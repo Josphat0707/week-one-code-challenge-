@@ -26,7 +26,7 @@ I then used the if..else if statement to set up conditions and outputs for every
 The last steps are where one keys in his/her cars' speed and calls the function so as to check the final output of the program.
 
  #### codeTest3.js
- 
+ i havent been able to complete test number 3 beacause i couldnt understand the question
  
 ## LICENSE & AUTHOR
 Copyright (c) [2023] [MWANGI JOSPHAT IRURA]
