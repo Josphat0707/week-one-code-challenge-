@@ -1,16 +1,40 @@
 function speedDetector(speed){
-    const speedLimit = 70;//since the speed limit is a solid 70 i had to use the const keyword.
-    const demeritPoint = 5;//a demerit point is awarded to a driver after going 5kilometers per hour past the speed limit.
-    const maxPointsGiven = 12;//Maximum number of demerit points awarded is 12. Past that, you drivers license is cancelled.
+    const speedLimit = 70;// sets the speed limit to 70 using the const keyword since its constant
+    const demeritPoint = 5;//This is the speed per kilometers per hour past the speed limit from which demerit points will be awarded 
+    
     if(speed <= speedLimit){
-        return "okay"// If one doesn't cross the speed limit, it returns okay.
-    }else {
-        let excessSpeed = speed - speedLimit;
-        const demeritPoints = Math.floor(speed/demeritPoint);
-        if(demeritPoints > maxPointsGiven){//condition checks if one has crossed the maximum number of points given.
-            return "Cancelled Licence!"
-        }else{"points" + demeritPoints};//if one hasn't then it adds to the demerit points one already has.
+        return "okay"
+    }else{
+        let demeritPoints = Math.floor((speed-speedLimit)/demeritPoint);//here we are calculating to find out how many points will be awarded if the driver is overspeeding
+
+        if(demeritPoints == 1){//sets the condition for every point and the message to be shown.
+            return "Points: 1"
+        }else if(demeritPoints == 2){
+            return "Points: 2"
+        }else if(demeritPoints == 3){
+            return "Points: 3"
+        }else if(demeritPoints == 4){
+            return "Points: 4"
+        }else if(demeritPoints == 5){
+            return "Points: 5"
+        }else if(demeritPoints == 6){
+            return "Points: 6"
+        }else if(demeritPoints == 7){
+            return "Points: 7"
+        }else if(demeritPoints == 8){
+            return "Points: 8"
+        }else if(demeritPoints == 9){
+            return "Points: 9"
+        }else if(demeritPoints == 10){
+            return "Points: 10"
+        }else if(demeritPoints == 11){
+            return "Points: 11"
+        }else if(demeritPoints == 12){
+            return "You have reached the maximum number of points: 12!"
+        }else{
+            return "Licence Is Suspended!"
+        }
     }
 }
-const speed = 70//Enter your car speed.
-console.log(speedDetector(speed));//calls the function so as to run the code.
+const speed = 130//enter your car speed
+console.log(speedDetector(speed));//calls the function so as to generate output
