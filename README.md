@@ -24,6 +24,9 @@ I started by creating a function called `speedDetector()` which takes in speed. 
 i then wrote an if statement that reurns "okay" if the speed keyedd in is less than or equal to the speed limit. I then went ahead and set a variable named demeritPoints that contains a method Math.floor() that return the number of points awarded for every 5km/hr past the speed limit.
 I then used the if..else if statement to set up conditions and outputs for every point that is acquired from the above step.
 The last steps are where one keys in his/her cars' speed and calls the function so as to check the final output of the program.
+
+ #### codeTest3.js
+ 
  
 ## LICENSE & AUTHOR
 Copyright (c) [2023] [MWANGI JOSPHAT IRURA]
