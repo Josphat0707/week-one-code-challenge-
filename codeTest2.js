@@ -8,7 +8,7 @@ function speedDetector(speed){
         let excessSpeed = speed - speedLimit;
         const demeritPoints = Math.floor(speed/demeritPoint);
         if(demeritPoints > maxPointsGiven){//condition checks if one has crossed the maximum number of points given.
-            return "Cancel Licence!"
+            return "Cancelled Licence!"
         }else{"points" + demeritPoints};//if one hasn't then it adds to the demerit points one already has.
     }
 }
