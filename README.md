@@ -6,17 +6,15 @@ The second test entailswriting a program that requires a person to key in their 
 
 The third test entails calculating someone's net salary. The program will ask for your basic salary and benefits as inputs, run the keyed in values against some calculations and conditions and in the end provide an output which will be your net salary.(codeTest3.js)
 
-When writing down the code for the three tests i encountered errors, example in test one that is index.js, the initial code would run after i copy pasted it on to the console but wouldn't run in vs code. I had to alter my code so that it would be able to run in the vs code. Parts of the comments in index.js are code that ran in the console but not in the vs code. i choose to retain them for future reference thus me commenting them instead of deleting them.
-
 ## PROJECT SETUP
 I will be going through the challenges that i have succeded.
 
 #### index.js
 in this challenge, we were supposed to write a program that provides grades to students based on their marks.
-I started by creating a function named `studentsGrades(marks)`. Inside the brackets is the word "marks" because at the end we will be calling the function in order to run the code. Ithen went on to write an if statement that checks to ensure that the values being keyed in as marks are between 0 and 100 as per the instructions. If the values keyed in are above 100 or less than 0 the program is set to return "Invalid marks".
+I started by creating a function named `studentsGrades()`.I went on to write ( marks = prompt("Enter your marks");)so that when one goes to the console and calls on the function`console.log(studentsGrades())`, one can be prompted to key in their distinctive marks. I then went on to write an if statement that checks to ensure that the values being keyed in as marks are between 0 and 100 as per the instructions. If the values keyed in are above 100 or less than 0 the program is set to return "Invalid marks".
 After ensuring that the values keyed in are values within the expected range, i went on to write assign grade as a variable which is then followed by an if..else if statement that sets the condition for which grade will be assigned to values within what range. For example `(if(marks >= 79)
         grade = "A";)` , 
-this statement states that for a grade to be A, the marks value should range from 79 and above. after setting up each condition. i went ahead and wrote "return grade ;" so that after the value has been passed aound and has met a specific condition and a grade has been assigned to it, we need to get that grade. At the end of the code, i wrote (const grade = 101) this is where you type in your marks and the vs code will provide an output based on what you have entered. then i called the function at the end which now provides an output of your grade based on the keyed in value.
+this statement states that for a grade to be A, the marks value should range from 79 and above. after setting up each condition. i went ahead and wrote "return grade ;" so that after the value has been passed aound and has met a specific condition and a grade has been assigned to it, we need to get that grade. At the end of the code,At the end i went ahead and wrote on how one can call the function in the console. That is ``console.log(studentsGrades())``.
 
 #### codeTest2.js
 in this challenge, we were supposed to write a program that would key in someone's speed limit, then the program would output whether the speed is okay.if not it would add a demerit point and if it the added demerit points have crossed the maximum number of demerit points, then it would output"Cancelled Licence!". 
