@@ -9,21 +9,19 @@ The third test entails calculating someone's net salary. The program will ask fo
 ## PROJECT SETUP
 I will be going through the challenges that i have succeded.
 
-#### index.js
+#### index.html
 in this challenge, we were supposed to write a program that provides grades to students based on their marks.
-I started by creating a function named `studentsGrades()`.I went on to write ( marks = prompt("Enter your marks");)so that when one goes to the console and calls on the function`console.log(studentsGrades())`, one can be prompted to key in their distinctive marks. I then went on to write an if statement that checks to ensure that the values being keyed in as marks are between 0 and 100 as per the instructions. If the values keyed in are above 100 or less than 0 the program is set to return "Invalid marks".
-After ensuring that the values keyed in are values within the expected range, i went on to write assign grade as a variable which is then followed by an if..else if statement that sets the condition for which grade will be assigned to values within what range. For example `(if(marks >= 79)
-        grade = "A";)` , 
-this statement states that for a grade to be A, the marks value should range from 79 and above. after setting up each condition. i went ahead and wrote "return grade ;" so that after the value has been passed aound and has met a specific condition and a grade has been assigned to it, we need to get that grade. At the end of the code,At the end i went ahead and wrote on how one can call the function in the console. That is ``console.log(studentsGrades())``.
+I started by creating the javascript program by creating a function named`studentsGrades()`, followed by an if statement that ensures that the values keyed in are numbers and numbers only. Ithen wrote another if statement to set the range for which numbers can be keyed in. For my case the if statement states that only numbers between 0 and 100 can be keyed in. Any other number wont be taken in instead an "invalid marks" statement will appear in an alert box. I went ahead and set the conditions for which grades will be assigned to what range of numbers.
+I then created a html file since i am running the program as a user and not a developer. I created a label file and assigned it a `studentGrade` variable followerd with text that states"Enter your marks". its followed by an input tag that ensures the values we enter are numbers. It's followed by a button that once clicked will run the keyed in marks and produce an output.
+in the javascript code i had to assign the studentGrade variable some values and i also had to assign marks some values in orfer for the code to run smoothly thus the following lines of code  "const studentGrade = document.getElementById("studentGrade");
+                                                             const marks = parseInt(studentGrade.value);"
 
-#### codeTest2.js
+#### codeTest2.html
 in this challenge, we were supposed to write a program that would key in someone's speed limit, then the program would output whether the speed is okay.if not it would add a demerit point and if it the added demerit points have crossed the maximum number of demerit points, then it would output"Cancelled Licence!". 
-I started by creating a function called `speedDetector()` which takes in speed. I then set the constant variables using the const keyword as stated."const speedLimit = 70;" sets the speed limit to 70, "const demeritPoint = 5;" sets demeritpoints to be awarded if one goes up more than 5 km per hour of the set speed limit, "const maxPointsGiven = 12;" sets the maximum number of points one can get to 12.
-i then wrote an if statement that reurns "okay" if the speed keyedd in is less than or equal to the speed limit. I then went ahead and set a variable named demeritPoints that contains a method Math.floor() that return the number of points awarded for every 5km/hr past the speed limit.
-I then used the if..else if statement to set up conditions and outputs for every point that is acquired from the above step.
-The last steps are where one keys in his/her cars' speed and calls the function so as to check the final output of the program.
+In terms of placing the html document inorder for the code to run on the browser rather than the console, i followed the steps in `index.html`.
+i then wrote down a javascript function that takes in a users' car speed and runs it through an if statement to see if its per the speed limit. If it is then the output will be okay. If not, the speed entered is subtracted from the speed limit and divided by the demerit point which is 5. the value acquired is run through an if statement so as to see what point will be given as an output. if the points are past 12 demeritPoints, the users licence is suspended.
 
- #### codeTest3.js
+ #### codeTest3.html
  i havent been able to complete test number 3 beacause i couldnt understand the question
  
 ## LICENSE & AUTHOR

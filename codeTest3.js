@@ -1,3 +1,0 @@
-function netSalaryCalculator(basicSalary, benefits){
-    
-}
