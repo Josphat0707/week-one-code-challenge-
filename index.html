@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Students' Grades</title>
+       
+    </head>
+    <body>
+        <h1>Students' grades</h1>
+        <label for="studentGrade">Enter your Marks; </label>
+        <input type="number" id="studentGrade">
+        <button onclick="studentsGrades()">Submit Marks</button>
+
+        <script>
+            function studentsGrades(){
+                const studentGrade = document.getElementById("studentGrade");
+                const marks = parseInt(studentGrade.value);
+            
+        if(isNaN(marks)){//checks to ensure that the number entered is a valid number
+            return "Not a number."
+        }
+        if(marks < 0 || marks > 100){
+            return "Invalid marks";
+        }//This if function ensures that the output will be provided so long as the number is between 0 and 100. if the number is above 100 or less than 0 you get "invalid marks"
+    
+        let grade;//Conditions are set for different grades and their value ratio
+        if(marks >= 79){
+            alert(grade = "A");
+        }else if(marks >= 60 && marks < 79){
+            alert(grade = "B");
+        }else if(marks >= 49 && marks <= 59){
+            alert(grade = "C");
+        }else if(marks >= 40 && marks <49){
+            alert(grade = "D");
+        }else{
+            alert(grade = "E");
+        }
+        
+    }
+            </script>
+
+    </body>
+</html>

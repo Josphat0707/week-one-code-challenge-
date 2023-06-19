@@ -1,6 +1,10 @@
-function speedDetector(speed){
+function speedDetector(){
+
+    speed = parseInt(prompt("Enter your speed"));
+
     const speedLimit = 70;// sets the speed limit to 70 using the const keyword since its constant
     const demeritPoint = 5;//This is the speed per kilometers per hour past the speed limit from which demerit points will be awarded 
+
     
     if(speed <= speedLimit){
         return "okay"
@@ -36,5 +40,5 @@ function speedDetector(speed){
         }
     }
 }
-const speed = 130//enter your car speed
-console.log(speedDetector(speed));//calls the function so as to generate output
+
+console.log(speedDetector());//calls the function so as to generate output
